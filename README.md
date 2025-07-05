@@ -25,12 +25,14 @@ A modern, secure, and customizable authentication system built with Next.js, fea
 ### Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/yourusername/betterauth.git
+   git clone https://github.com/ankit0984/better-auth-kit
    cd betterauth
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -39,26 +41,29 @@ A modern, secure, and customizable authentication system built with Next.js, fea
 
 3. Set up environment variables:
    Create a `.env.local` file in the root directory and add the following variables:
+
    ```env
    DATABASE_URL=your_database_connection_string
    NEXTAUTH_SECRET=your_nextauth_secret
    NEXTAUTH_URL=http://localhost:3000
-   
+
    # Email configuration (for password reset and verification)
    EMAIL_SERVER=your_email_server
    EMAIL_FROM=your_email@example.com
-   
+
    # OAuth providers (Google example)
    GOOGLE_CLIENT_ID=your_google_client_id
    GOOGLE_CLIENT_SECRET=your_google_client_secret
    ```
 
 4. Run database migrations:
+
    ```bash
    npx drizzle-kit push:pg
    ```
 
 5. Start the development server:
+
    ```bash
    npm run dev
    # or
